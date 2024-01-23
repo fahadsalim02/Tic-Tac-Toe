@@ -1,0 +1,89 @@
+body {
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 100;
+    background-image: linear-gradient(-45deg, rgb(17, 55, 222), rgb(35, 190, 213));
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.popup {
+    display: none;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #88fb04;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .popup-content {
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.closebtn{
+    background-color: #88fb04;
+}
+.title
+{
+    text-shadow: -2px 2px 6px #0831fc;
+    font-style: italic;
+    font-size: 1.5em;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    justify-content: center; 
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px; 
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+    font-weight: bold; 
+    color: #287e08;   
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10%;
+    cursor:pointer;
+    background-color: #f2fa5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resetbtn {
+    margin-top: 1cm;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #407abc;
+    color: #fff;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #ecedd8;
+    cursor: pointer;
+}
+
+.resetbtn:hover {
+    background-color: #c57e1b;
+}
+
+.cell:hover {
+    background-color: #3fd4ef;
+}
